@@ -1,0 +1,27 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}Weather app{% endblock %}
+
+
+{% block content %}
+
+<!-- main header -->
+<div class="containter-fluid main_header">
+    <div class="row">
+        <!-- left side div -->
+        <div class="col-md-6 col-12 main_header_right align-items-center">
+            <figure>
+                <img src="{% static 'default1.png' %}" alt="Jaadu" class="img-fluid" title="Jaadu Technical">
+            </figure>
+        </div>
+        <div class="col-md-6 col-12 main_header_left">
+            <p>Welcome to weather app</p>
+            <h1>The page is not Retrievable.</h1><br>
+            <a href="/"><button>Go Back</button></a>
+        </div>
+        <!-- right side div -->
+
+    </div>
+</div>
+{% endblock %}
+

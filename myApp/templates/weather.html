@@ -1,0 +1,35 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}Weather app{% endblock %}
+
+{% block content %}
+<!-- main header -->
+<div class="containter-fluid main_header">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="main_content">
+                <form action="/weather/" method="post" class="temp_form">
+                    {% csrf_token %}
+                    <input type="text" name="cityName" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                    <input type="submit" value="search">
+                </form>
+            </div>
+            <div class="tempInformation">
+                <div class="top_layer">
+                    <p id="day">{{week}}</p>
+                    <p id="today_data">{{day}} {{month}}</p>
+                </div>
+                <div class="main_layer">
+                    <p id="city_name">{{cityName}} - {{country}}</p>
+                    <div class="middle_layer">
+                        <p id="temp"><span id="temp_real_val"><small>{{temp}}</small></span><sup><small>o</small></sup>c </p>
+                        <p id="temp_status"><small>{{temp_status}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}

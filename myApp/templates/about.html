@@ -1,0 +1,26 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}Weather app{% endblock %}
+
+
+{% block content %}
+
+<!-- main header -->
+<div class="containter-fluid main_header">
+  <div class="row">
+    <!-- left side div -->
+    <div class="col-md-6 col-12 main_header_right align-items-center">
+      <figure>
+        <img src="{% static 'about10.png' %}" alt="Jaadu" class="img-fluid" title="Jaadu Technical">
+      </figure>
+    </div>
+    <div class="col-md-6 col-12 main_header_left">
+      <p>Welcome to weather app</p>
+      <h2>I Am Currently pursuing <span class="text_clr"> B-Tech </span> In Computer Science Engineering </h2>
+      <a href="https://www.linkedin.com/in/ali-ammar-kazmi-598701215" target="_Jaadu"><button>about me</button></a>
+    </div>
+    <!-- right side div -->
+
+  </div>
+</div>
+{% endblock %}
